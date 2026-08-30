@@ -2,25 +2,26 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tania — Full Stack Developer (Frontend Focused)",
+  title: "Tania — Developer Intern & Fresher",
   description:
-    "Portfolio of Tania (@taniasha), a Full Stack Developer specializing in fluid frontend architectures, Tailwind CSS, and full-stack web applications.",
+    "Portfolio of Tania (@taniasha), a passionate fresher and developer currently 6+ months into a software internship, focusing on Frontend, React, and Tailwind CSS.",
   keywords: [
     "Tania",
     "taniasha",
-    "Full Stack Developer",
-    "Frontend Specialist",
+    "Fresher Developer",
+    "Frontend Intern",
+    "Full Stack Intern",
     "React",
     "Next.js",
     "Tailwind CSS",
-    "TypeScript",
+    "JavaScript",
     "Portfolio",
   ],
   authors: [{ name: "Tania", url: "https://github.com/taniasha" }],
   openGraph: {
-    title: "Tania — Full Stack Developer (Frontend Focused)",
+    title: "Tania — Developer Intern & Fresher",
     description:
-      "Crafting polished, performant web applications with Tailwind CSS, Next.js, and modern full-stack architectures.",
+      "Passionate fresher 6+ months into a software internship, building clean responsive web apps with Tailwind CSS & React.",
     url: "https://github.com/taniasha/Portfolio",
     siteName: "Tania Portfolio",
     type: "website",

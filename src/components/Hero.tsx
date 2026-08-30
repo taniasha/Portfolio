@@ -17,11 +17,11 @@ const techStack = [
   "React",
   "Next.js",
   "Tailwind CSS",
-  "TypeScript",
+  "JavaScript / TypeScript",
+  "HTML5 & CSS3",
   "Node.js",
-  "REST / GraphQL",
-  "PostgreSQL",
-  "Framer Motion",
+  "REST APIs",
+  "Git & GitHub",
 ];
 
 export default function Hero() {
@@ -39,17 +39,20 @@ export default function Hero() {
 
       <div className="max-w-6xl mx-auto px-6 sm:px-8 w-full relative z-10">
         <div className="max-w-3xl">
-          {/* Eyebrow / Role Tag */}
+          {/* Eyebrow / Current Status */}
           <motion.div
             variants={fadeUp}
             custom={0}
             initial="hidden"
             animate="visible"
-            className="flex items-center gap-3 mb-6"
+            className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface border border-borderline shadow-sm mb-6"
           >
-            <span className="w-8 h-[1.5px] bg-primary/40" />
-            <span className="text-xs uppercase tracking-widest font-semibold text-muted">
-              Full Stack Developer · Frontend Specialist
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span className="text-xs font-medium text-muted">
+              Full Stack Intern · 6+ Months Experience
             </span>
           </motion.div>
 
@@ -67,7 +70,7 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          {/* Subtitle / Bio */}
+          {/* Subtitle / Honest Story */}
           <motion.p
             variants={fadeUp}
             custom={0.2}
@@ -75,11 +78,11 @@ export default function Hero() {
             animate="visible"
             className="text-lg sm:text-xl text-muted leading-relaxed mb-4 font-normal"
           >
-            I build end-to-end web applications with a heavy focus on crafting{" "}
+            I&apos;m a passionate fresher and developer currently 6+ months into my software internship, with a strong focus on{" "}
             <strong className="text-primary font-medium">
-              exceptional user interfaces
+              Frontend Development 
             </strong>
-            , responsive layouts, and modern frontend architecture using Tailwind CSS &amp; React.
+            .
           </motion.p>
 
           <motion.p
@@ -89,8 +92,7 @@ export default function Hero() {
             animate="visible"
             className="text-sm sm:text-base text-subtle leading-relaxed mb-8 max-w-2xl"
           >
-            Bridging the gap between robust backend APIs and fluid, accessible user experiences. 
-            From database schemas to pixel-perfect micro-interactions.
+            Every day I&apos;m turning designs into clean, responsive React components, building full stack projects, and learning best practices in real-world web development.
           </motion.p>
 
           {/* Tech stack pills */}
@@ -124,7 +126,7 @@ export default function Hero() {
               id="hero-cta-work"
               className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-background bg-primary rounded-full hover:bg-neutral-800 hover:-translate-y-0.5 hover:shadow-lg transition-all"
             >
-              Explore Selected Work
+              See My Projects
               <svg
                 width="16"
                 height="16"
