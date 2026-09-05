@@ -66,10 +66,10 @@ export default function Projects() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold tracking-tight text-white mb-3">
             Selected Projects
           </h2>
-          <p className="text-base sm:text-lg text-gray-400 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
             Explore my recent full-stack web applications featuring high-performance architectures,
             modern APIs, responsive design, and live deployments.
           </p>
@@ -108,19 +108,19 @@ export default function Projects() {
               </div>
 
               {/* Card Body */}
-              <div className="p-6 flex flex-col flex-1 relative z-10">
+              <div className="p-5 sm:p-6 flex flex-col flex-1 relative z-10">
                 {/* Category Badge */}
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-purple-400 mb-1.5 block">
+                <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider text-purple-400 mb-1 block">
                   {project.category}
                 </span>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-pink-300 transition-all duration-300">
+                <h3 className="text-lg font-bold text-white mb-1.5 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-pink-300 transition-all duration-300">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mb-5 flex-1">
+                <p className="text-xs sm:text-[13px] text-gray-400 leading-relaxed mb-4 flex-1">
                   {project.description}
                 </p>
 

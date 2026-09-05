@@ -66,10 +66,10 @@ export default function TechStack() {
           <p className="text-xs uppercase tracking-widest font-semibold text-purple-400 mb-2">
             Skills &amp; Technologies
           </p>
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">
             My Tech Stack
           </h2>
-          <p className="text-base sm:text-lg text-gray-400 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
             The core frameworks, libraries, and tools I use to build modern full-stack web applications.
           </p>
         </motion.div>
@@ -85,7 +85,7 @@ export default function TechStack() {
               transition={{ duration: 0.6, delay: idx * 0.15, ease: EASE }}
               className="bg-gradient-to-br from-gray-900/80 to-gray-900/40 border border-gray-800/80 rounded-2xl p-6 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-300 hover:shadow-xl hover:shadow-purple-950/20"
             >
-              <h3 className="text-lg font-bold text-white mb-5 pb-3 border-b border-gray-800 flex items-center gap-2">
+              <h3 className="text-base font-bold text-white mb-4 pb-2.5 border-b border-gray-800 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500" />
                 {cat.title}
               </h3>

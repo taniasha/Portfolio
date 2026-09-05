@@ -42,10 +42,10 @@ export default function ContactPage() {
             transition={{ duration: 0.5, ease: EASE }}
             className="text-center mb-8"
           >
-            <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white mb-2">
+            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-2">
               Contact Me
             </h1>
-            <p className="text-sm sm:text-base text-gray-400">
+            <p className="text-xs sm:text-sm text-gray-400">
               Have a project, role, or collaboration in mind? Reach out anytime!
             </p>
           </motion.div>
@@ -59,15 +59,15 @@ export default function ContactPage() {
           >
             {/* Top Card Header: Profile Info */}
             <div className="flex items-center gap-4 pb-6 border-b border-gray-800/80">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 p-[1.5px] shadow-lg shrink-0">
-                <div className="w-full h-full bg-black rounded-2xl flex items-center justify-center font-black text-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-600 to-pink-500 p-[1.5px] shadow-lg shrink-0">
+                <div className="w-full h-full bg-black rounded-xl flex items-center justify-center font-black text-base text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300">
                   TS
                 </div>
               </div>
 
               <div>
                 <div className="flex items-center gap-2">
-                  <h2 className="text-xl sm:text-2xl font-bold text-white tracking-wide">
+                  <h2 className="text-lg sm:text-xl font-bold text-white tracking-wide">
                     Tania Sharma
                   </h2>
                   <span className="px-2.5 py-0.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-[11px] font-semibold text-purple-300">
@@ -93,7 +93,7 @@ export default function ContactPage() {
                       Email
                     </span>
                     <a
-                      href="mailto:bishupandit07@gmail.com"
+                      href="mailto:taniaasharma28@gmail.com"
                       className="text-sm sm:text-base font-semibold text-white hover:text-purple-300 transition-colors break-all"
                     >
                       bishupandit07@gmail.com

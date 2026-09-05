@@ -85,10 +85,10 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1, ease: EASE }}
             >
-              <p className="text-sm sm:text-base font-light text-gray-400 mb-1">
+              <p className="text-xs sm:text-sm font-light text-gray-400 mb-1">
                 Hello, I&apos;m
               </p>
-              <h1 className="text-4xl sm:text-4xl lg:text-4xl font-extrabold tracking-tight mb-4">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-3">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
                   Tania Sharma
                 </span>
@@ -100,15 +100,15 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: EASE }}
-              className="h-10 sm:h-12 flex items-center justify-center lg:justify-start mb-5"
+              className="h-8 sm:h-10 flex items-center justify-center lg:justify-start mb-4"
             >
-              <span className="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-300">
+              <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-300">
                 A{" "}
               </span>
-              <span className="text-xl sm:text-2xl lg:text-3xl font-semibold ml-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+              <span className="text-base sm:text-lg lg:text-xl font-semibold ml-1.5 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
                 {displayText}
               </span>
-              <span className="inline-block w-0.5 h-6 sm:h-8 ml-1 bg-pink-500 animate-pulse" />
+              <span className="inline-block w-0.5 h-5 sm:h-6 ml-1 bg-pink-500 animate-pulse" />
             </motion.div>
 
             {/* Bio paragraph */}
@@ -116,10 +116,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: EASE }}
-              className="text-gray-300 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
+              className="text-gray-400 text-sm sm:text-base leading-relaxed mb-7 max-w-lg mx-auto lg:mx-0"
             >
               Passionate software engineer crafting responsive, high-performance web applications.
-              Specializing in the <span className="text-white font-medium">MERN stack, Next.js, and modern UI engineering</span>.
+              Specializing in the <span className="text-gray-200 font-medium">MERN stack, Next.js, and modern UI engineering</span>.
               Blending aesthetic polish with clean, scalable code to bring digital ideas to life.
             </motion.p>
 
@@ -235,23 +235,23 @@ export default function Hero() {
               </div>
 
               {/* Main Avatar / Portrait Frame */}
-              <div className="w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] rounded-full overflow-hidden border-2 border-purple-500/40 bg-gradient-to-b from-gray-900 via-gray-950 to-black relative shadow-2xl flex flex-col items-center justify-center p-6 text-center group">
+              <div className="w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] rounded-full overflow-hidden border-2 border-purple-500/40 bg-gradient-to-b from-gray-900 via-gray-950 to-black relative shadow-2xl flex flex-col items-center justify-center p-5 text-center group">
                 <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 via-pink-500/10 to-transparent pointer-events-none" />
 
                 {/* Developer Avatar Artwork */}
-                <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 p-[2px] mb-4 shadow-xl">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 p-[2px] mb-3 shadow-xl">
                   <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
-                    <span className="text-4xl sm:text-5xl font-black bg-gradient-to-r from-purple-300 via-pink-300 to-white bg-clip-text text-transparent">
+                    <span className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-300 via-pink-300 to-white bg-clip-text text-transparent">
                       TS
                     </span>
                   </div>
                 </div>
 
                 <div className="relative z-10">
-                  <p className="text-lg font-bold text-white tracking-wide mb-1">
+                  <p className="text-base font-bold text-white tracking-wide mb-0.5">
                     Tania Sharma
                   </p>
-                  <p className="text-xs text-purple-300 font-medium">
+                  <p className="text-[11px] text-purple-300 font-medium">
                     Crafting Clean Code &amp; Modern UI
                   </p>
                 </div>
