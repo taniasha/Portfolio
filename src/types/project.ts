@@ -27,6 +27,6 @@ export const projects = [
       "A dynamic travel agency web platform showcasing destination packages, interactive booking UI, responsive layouts, and modern visual design.",
     tags: ["Next.js", "Tailwind CSS", "TypeScript", "React", "Vercel"],
     image: "/sky.jpg",
-    link: "https://travel-agency-eight-sooty.vercel.app",
+    link: "https://travel-agency-project-deploy.vercel.app/",
   },
 ];
