@@ -13,9 +13,9 @@ interface EducationItem {
   location?: string;
   duration: string;
   grade?: string;
-  description: string;
-  highlights: string[];
-  gradient: string;
+  description?: string;
+  highlights?: string[];
+  gradient?: string;
 }
 
 const educationData: EducationItem[] = [
@@ -23,37 +23,22 @@ const educationData: EducationItem[] = [
     id: "university",
     type: "University",
     levelBadge: "Higher Education",
-    degree: "Bachelor of Technology (B.Tech) / Degree in Computer Science",
-    institution: "University / Institute of Engineering & Technology",
+    degree: "Bachelor of Technology (B.Tech) ",
+    institution: "DAV University",
     location: "India",
-    duration: "2021 – Present / Graduate",
-    grade: "First Class",
-    description:
-      "Focused on Full-Stack Software Engineering, modern web frameworks, algorithms, and distributed systems. Applied academic principles directly into production web applications like VedPath and Rent Ease.",
-    highlights: [
-      "Core: Data Structures, Algorithms & Object-Oriented Programming",
-      "Specialization: Full Stack Web Development (MERN, Next.js)",
-      "Database Management Systems & RESTful API Architecture",
-      "Led technical project teams for university capstone initiatives",
-    ],
+    duration: "2022-2026",
+    grade: "8.5",
     gradient: "from-purple-500 to-pink-500",
   },
   {
     id: "senior-secondary",
     type: "Schooling",
-    levelBadge: "Senior Secondary (XII)",
-    degree: "Senior Secondary Education (Class XII) – Non-Medical / Science",
+    levelBadge: "(XII)",
+    degree: "Auckland Public School",
     institution: "Senior Secondary High School",
     location: "India",
-    duration: "2019 – 2021",
-    grade: "Distinction",
-    description:
-      "Completed senior secondary schooling with strong foundational focus on Mathematics, Physics, Chemistry, and Computer Science fundamentals.",
-    highlights: [
-      "Stream: Physics, Chemistry & Advanced Mathematics",
-      "Foundational Programming & Logical Problem Solving",
-      "Active participant in science exhibitions and academic competitions",
-    ],
+    duration: "2021-2022",
+    grade: "92%",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
@@ -61,16 +46,10 @@ const educationData: EducationItem[] = [
     type: "Schooling",
     levelBadge: "Secondary (X)",
     degree: "High School Matriculation (Class X)",
-    institution: "High School",
+    institution: "Auckland Public School",
     location: "India",
-    duration: "2018 – 2019",
-    grade: "Distinction",
-    description:
-      "Completed secondary education with comprehensive academic excellence across Mathematics, Science, and Languages, setting the benchmark for engineering pursuits.",
-    highlights: [
-      "All-round academic excellence with distinction in Math & Science",
-      "Engaged in co-curricular activities and school leadership roles",
-    ],
+    duration: "2019-2020",
+    grade: "91%",
     gradient: "from-emerald-500 to-teal-500",
   },
 ];
@@ -223,27 +202,31 @@ export default function Education() {
                 </p>
 
                 {/* Description */}
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mb-4">
-                  {item.description}
-                </p>
+                {item.description && (
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed mb-4">
+                    {item.description}
+                  </p>
+                )}
 
                 {/* Key Highlights / Coursework */}
-                <div className="space-y-1.5 pt-3 border-t border-gray-800/70">
-                  <p className="text-[11px] uppercase tracking-wider font-semibold text-gray-400 mb-2">
-                    Key Highlights &amp; Focus:
-                  </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {item.highlights.map((highlight, hIdx) => (
-                      <div
-                        key={hIdx}
-                        className="flex items-start gap-2 text-xs text-gray-300"
-                      >
-                        <span className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-1.5 flex-shrink-0" />
-                        <span>{highlight}</span>
-                      </div>
-                    ))}
+                {item.highlights && item.highlights.length > 0 && (
+                  <div className="space-y-1.5 pt-3 border-t border-gray-800/70">
+                    <p className="text-[11px] uppercase tracking-wider font-semibold text-gray-400 mb-2">
+                      Key Highlights &amp; Focus:
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {item.highlights.map((highlight, hIdx) => (
+                        <div
+                          key={hIdx}
+                          className="flex items-start gap-2 text-xs text-gray-300"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-1.5 flex-shrink-0" />
+                          <span>{highlight}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </motion.div>
           ))}
