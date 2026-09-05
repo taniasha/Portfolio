@@ -77,7 +77,7 @@ export default function Navbar() {
         </nav>
 
         {/* Right CTAs */}
-        <div className="hidden sm:flex items-center gap-3">
+        <div className="hidden sm:flex items-center gap-2.5">
           {/* GitHub Icon Link */}
           <a
             href="https://github.com/taniasha"
@@ -91,11 +91,36 @@ export default function Navbar() {
             </svg>
           </a>
 
+          {/* Resume Button */}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="nav-resume"
+            className="text-xs sm:text-sm font-medium text-purple-200 hover:text-white px-3.5 py-2 rounded-full border border-purple-500/30 hover:border-purple-400 bg-purple-950/20 hover:bg-purple-950/40 transition-all duration-300 flex items-center gap-1.5"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-pink-400"
+            >
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            <span>Resume</span>
+          </a>
+
           {/* Contact Button */}
           <Link
             href="/contact"
             id="nav-contact"
-            className="text-xs sm:text-sm font-semibold text-white px-4 py-2 rounded-full bg-gradient-to-r from-purple-600/30 to-pink-600/30 hover:from-purple-600/50 hover:to-pink-600/50 border border-purple-500/40 hover:border-purple-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:-translate-y-0.5"
+            className="text-xs sm:text-sm font-semibold text-white px-4 py-2 rounded-full bg-gradient-to-r from-purple-600/40 to-pink-600/40 hover:from-purple-600/60 hover:to-pink-600/60 border border-purple-500/40 hover:border-purple-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:-translate-y-0.5"
           >
             Contact
           </Link>
@@ -171,6 +196,25 @@ export default function Navbar() {
           >
             Education
           </Link>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="px-4 py-2 text-sm text-pink-300 hover:text-white rounded-lg hover:bg-white/5 flex items-center justify-between"
+          >
+            <span>View Resume</span>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M7 17L17 7M17 7H7M17 7V17" />
+            </svg>
+          </a>
           <Link
             href="/contact"
             onClick={() => setMobileMenuOpen(false)}
