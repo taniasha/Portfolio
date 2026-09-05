@@ -10,7 +10,7 @@ const roles = [
   "Full Stack Developer",
   "MERN Stack Engineer",
   "React & Next.js ",
-  "Frontend Craftsman",
+  "Frontend Focussed",
 ];
 
 export default function Hero() {
@@ -103,7 +103,7 @@ export default function Hero() {
               className="h-8 sm:h-10 flex items-center justify-center lg:justify-start mb-4"
             >
               <span className="text-base sm:text-lg lg:text-xl font-medium text-gray-300">
-                A{" "}
+                {" "}
               </span>
               <span className="text-base sm:text-lg lg:text-xl font-semibold ml-1.5 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
                 {displayText}

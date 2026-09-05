@@ -9,7 +9,7 @@ interface EducationItem {
   type: "University" | "Schooling";
   levelBadge: string;
   degree: string;
-  institution: string;
+  institution?: string;
   location?: string;
   duration: string;
   grade?: string;
@@ -27,15 +27,15 @@ const educationData: EducationItem[] = [
     institution: "DAV University",
     location: "India",
     duration: "2022-2026",
-    grade: "8.5",
+    grade: "8.5 CGP",
     gradient: "from-purple-500 to-pink-500",
   },
   {
     id: "senior-secondary",
     type: "Schooling",
     levelBadge: "(XII)",
-    degree: "Auckland Public School",
-    institution: "Senior Secondary High School",
+    degree:"Senior Secondary (12th) — CBSE",
+    institution: "Auckland Public School",
     location: "India",
     duration: "2021-2022",
     grade: "92%",
@@ -45,7 +45,7 @@ const educationData: EducationItem[] = [
     id: "secondary",
     type: "Schooling",
     levelBadge: "Secondary (X)",
-    degree: "High School Matriculation (Class X)",
+    degree: "High School Matriculation (Class X) - CBSE",
     institution: "Auckland Public School",
     location: "India",
     duration: "2019-2020",
