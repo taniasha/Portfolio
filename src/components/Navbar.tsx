@@ -63,6 +63,12 @@ export default function Navbar() {
             Skills
           </Link>
           <Link
+            href="/#education"
+            className="px-3.5 py-1.5 text-sm font-medium text-gray-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
+          >
+            Education
+          </Link>
+          <Link
             href="/contact"
             className="px-3.5 py-1.5 text-sm font-medium text-purple-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
           >
@@ -157,6 +163,13 @@ export default function Navbar() {
             className="px-4 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-white/5"
           >
             Skills
+          </Link>
+          <Link
+            href="/#education"
+            onClick={() => setMobileMenuOpen(false)}
+            className="px-4 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-white/5"
+          >
+            Education
           </Link>
           <Link
             href="/contact"
