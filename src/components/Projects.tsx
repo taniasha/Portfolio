@@ -2,41 +2,9 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { projects } from "@/types/project";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
-
-const projects = [
-  {
-    id: "ecommerce",
-    title: "Lumina Commerce",
-    category: "Full Stack Storefront",
-    description:
-      "A high-performance modern e-commerce application featuring server-rendered product catalogs, dynamic filtering, Stripe checkout integration, and full cart state management.",
-    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Node.js", "PostgreSQL"],
-    image: "/project-ecommerce.jpg",
-    link: "#",
-  },
-  {
-    id: "weather",
-    title: "Weather Dash & Forecasts",
-    category: "Data Visualization & Web App",
-    description:
-      "Interactive climate dashboard delivering real-time metrics, dynamic charts, 7-day predictive models, and geolocation-based weather tracking with responsive layouts.",
-    tags: ["React", "Tailwind CSS", "REST API", "Chart.js", "TypeScript"],
-    image: "/project-weather.jpg",
-    link: "#",
-  },
-  {
-    id: "taskmanager",
-    title: "TaskFlow Collaborative Kanban",
-    category: "Full Stack Productivity Suite",
-    description:
-      "Real-time team project board featuring drag-and-drop workflow columns, optimistic UI updates, multi-user sync via Supabase WebSockets, and custom theme states.",
-    tags: ["React", "Tailwind CSS", "Supabase", "Framer Motion", "TypeScript"],
-    image: "/project-taskmanager.jpg",
-    link: "#",
-  },
-];
 
 const containerVariants = {
   hidden: {},
@@ -107,6 +75,8 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-primary/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     id={`project-${project.id}-link`}
                     className="inline-flex items-center gap-2 px-5 py-2.5 bg-surface text-primary rounded-full text-xs font-semibold shadow-md hover:bg-background transform translate-y-2 group-hover:translate-y-0 transition-all duration-300"
                   >

@@ -12,7 +12,7 @@ const socials = [
   {
     id: "footer-linkedin",
     label: "LinkedIn",
-    href: "https://linkedin.com/in/taniasha",
+    href: "https://www.linkedin.com/in/tania-sharma-web-developer/",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.991V9h3.114v1.561h.044c.434-.823 1.492-1.69 3.072-1.69 3.286 0 3.892 2.162 3.892 4.974v6.607zM5.337 7.433a1.806 1.806 0 110-3.612 1.806 1.806 0 010 3.612zm1.596 13.019H3.741V9h3.192v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/>
@@ -46,7 +46,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-primary font-medium hover:underline"
             >
-              Tania (@taniasha)
+              Tania Sharma
             </a>{" "}
             · {year}
           </p>
