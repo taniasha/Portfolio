@@ -192,7 +192,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="mailto:bishupandit07@gmail.com"
+                href="mailto:taniaasharma28@gmail.com"
                 aria-label="Send Email"
                 className="p-3 bg-gray-900/90 rounded-full border border-gray-800 text-gray-400 hover:text-white hover:border-purple-500/60 hover:bg-purple-950/30 hover:shadow-[0_0_15px_rgba(168,85,247,0.4)] hover:scale-110 transition-all duration-300"
               >

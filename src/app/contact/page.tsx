@@ -1,6 +1,4 @@
 "use client";
-
-import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -8,13 +6,6 @@ import { motion } from "framer-motion";
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 export default function ContactPage() {
-  const [copied, setCopied] = useState(false);
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText("bishupandit07@gmail.com");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
-  };
 
   return (
     <div className="min-h-screen bg-black text-white selection:bg-purple-500/30 selection:text-white flex flex-col justify-between">
@@ -94,9 +85,9 @@ export default function ContactPage() {
                     </span>
                     <a
                       href="mailto:taniaasharma28@gmail.com"
-                      className="text-sm sm:text-base font-semibold text-white hover:text-purple-300 transition-colors break-all"
+                      className="text-xs sm:text-sm font-semibold text-white hover:text-purple-300 transition-colors break-all"
                     >
-                      bishupandit07@gmail.com
+                      taniaasharma28@gmail.com
                     </a>
                   </div>
                 </div>
@@ -115,7 +106,7 @@ export default function ContactPage() {
                       Contact Number
                     </span>
                     <a
-                      href="tel:+919876543210"
+                      href="tel:+916284253975"
                       className="text-sm sm:text-base font-semibold text-white hover:text-emerald-300 transition-colors"
                     >
                       +91 6284253975
