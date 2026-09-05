@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -8,7 +9,7 @@ const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 const roles = [
   "Full Stack Developer",
   "MERN Stack Engineer",
-  "React & Next.js Specialist",
+  "React & Next.js ",
   "Frontend Craftsman",
 ];
 
@@ -87,7 +88,7 @@ export default function Hero() {
               <p className="text-sm sm:text-base font-light text-gray-400 mb-1">
                 Hello, I&apos;m
               </p>
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4">
+              <h1 className="text-4xl sm:text-4xl lg:text-4xl font-extrabold tracking-tight mb-4">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-400">
                   Tania Sharma
                 </span>
@@ -150,13 +151,13 @@ export default function Hero() {
                 </svg>
               </a>
 
-              <a
-                href="mailto:bishupandit07@gmail.com"
+              <Link
+                href="/contact"
                 id="hero-cta-contact"
                 className="px-7 py-3.5 border-2 border-purple-500/70 hover:border-purple-400 rounded-full flex items-center gap-2 text-sm font-semibold text-gray-200 transition-all duration-300 hover:bg-purple-950/30 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] backdrop-blur-sm hover:-translate-y-0.5"
               >
                 <span>Get In Touch</span>
-              </a>
+              </Link>
             </motion.div>
 
             {/* Social Icons row */}

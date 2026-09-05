@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,8 +21,8 @@ export default function Navbar() {
         }`}
       >
         {/* Brand / Logo */}
-        <a
-          href="#"
+        <Link
+          href="/"
           id="nav-logo"
           className="flex items-center gap-2 font-bold text-white tracking-wide group"
         >
@@ -33,40 +34,40 @@ export default function Navbar() {
           <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
             Tania Sharma
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="px-3.5 py-1.5 text-sm font-medium text-gray-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            href="/#about"
             className="px-3.5 py-1.5 text-sm font-medium text-gray-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
           >
             About
-          </a>
-          <a
-            href="#work"
+          </Link>
+          <Link
+            href="/#work"
             className="px-3.5 py-1.5 text-sm font-medium text-gray-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
           >
             Work
-          </a>
-          <a
-            href="#skills"
+          </Link>
+          <Link
+            href="/#skills"
             className="px-3.5 py-1.5 text-sm font-medium text-gray-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
           >
             Skills
-          </a>
-          <a
-            href="#contact"
-            className="px-3.5 py-1.5 text-sm font-medium text-gray-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
+          </Link>
+          <Link
+            href="/contact"
+            className="px-3.5 py-1.5 text-sm font-medium text-purple-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
           >
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* Right CTAs */}
@@ -85,13 +86,13 @@ export default function Navbar() {
           </a>
 
           {/* Contact Button */}
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             id="nav-contact"
             className="text-xs sm:text-sm font-semibold text-white px-4 py-2 rounded-full bg-gradient-to-r from-purple-600/30 to-pink-600/30 hover:from-purple-600/50 hover:to-pink-600/50 border border-purple-500/40 hover:border-purple-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:-translate-y-0.5"
           >
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu hamburger toggle */}
@@ -129,48 +130,41 @@ export default function Navbar() {
       {/* Mobile dropdown */}
       {mobileMenuOpen && (
         <div className="md:hidden mt-2 max-w-5xl mx-auto bg-black/90 backdrop-blur-xl border border-white/10 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl">
-          <a
-            href="#"
+          <Link
+            href="/"
             onClick={() => setMobileMenuOpen(false)}
             className="px-4 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-white/5"
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            href="/#about"
             onClick={() => setMobileMenuOpen(false)}
             className="px-4 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-white/5"
           >
             About
-          </a>
-          <a
-            href="#work"
+          </Link>
+          <Link
+            href="/#work"
             onClick={() => setMobileMenuOpen(false)}
             className="px-4 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-white/5"
           >
             Work
-          </a>
-          <a
-            href="#skills"
+          </Link>
+          <Link
+            href="/#skills"
             onClick={() => setMobileMenuOpen(false)}
             className="px-4 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-white/5"
           >
             Skills
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/contact"
             onClick={() => setMobileMenuOpen(false)}
             className="px-4 py-2 text-sm text-purple-300 font-semibold hover:text-white rounded-lg hover:bg-white/5"
           >
             Contact
-          </a>
-          <a
-            href="#contact"
-            onClick={() => setMobileMenuOpen(false)}
-            className="mt-2 text-center text-xs font-semibold text-white py-2.5 rounded-full bg-gradient-to-r from-purple-600 to-pink-600"
-          >
-            Contact
-          </a>
+          </Link>
         </div>
       )}
     </header>
