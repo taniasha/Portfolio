@@ -9,36 +9,39 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#F9F7F4",
-        surface: "#FFFFFF",
-        primary: "#111111",
-        muted: "#666666",
-        subtle: "#999999",
-        borderline: "#E5E1DB",
-        accentSoft: "#EAE6DF",
+        background: "#030305",
+        surface: "#0c0c10",
+        surfaceCard: "#111117",
+        borderline: "rgba(255, 255, 255, 0.08)",
+        borderHover: "rgba(168, 85, 247, 0.5)",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "Inter", "sans-serif"],
         serif: ["var(--font-serif)", "Playfair Display", "serif"],
       },
       animation: {
-        "drift-slow": "drift 14s ease-in-out infinite alternate",
-        "drift-reverse": "driftReverse 18s ease-in-out infinite alternate",
-        "pulse-subtle": "pulseSubtle 2.5s ease-in-out infinite",
+        "pulse-slow": "pulseSlow 4s ease-in-out infinite",
+        "rotate-slow": "spin 20s linear infinite",
+        "float": "float 5s ease-in-out infinite",
+        "shine": "shine 3s ease-in-out infinite",
       },
       keyframes: {
-        drift: {
-          "0%": { transform: "translate(0, 0) scale(1)" },
-          "100%": { transform: "translate(30px, 20px) scale(1.08)" },
+        pulseSlow: {
+          "0%, 100%": { opacity: "0.4", transform: "scale(1)" },
+          "50%": { opacity: "0.7", transform: "scale(1.05)" },
         },
-        driftReverse: {
-          "0%": { transform: "translate(0, 0) scale(1)" },
-          "100%": { transform: "translate(-25px, -15px) scale(1.05)" },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
-        pulseSubtle: {
-          "0%, 100%": { opacity: "0.3", transform: "scaleY(1)" },
-          "50%": { opacity: "0.8", transform: "scaleY(1.15)" },
+        shine: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(200%)" },
         },
+      },
+      boxShadow: {
+        glow: "0 0 25px rgba(168, 85, 247, 0.35)",
+        "glow-lg": "0 0 40px rgba(236, 72, 153, 0.35)",
       },
     },
   },

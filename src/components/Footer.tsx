@@ -22,7 +22,7 @@ const socials = [
   {
     id: "footer-email",
     label: "Email",
-    href: "mailto:hello@tania.dev",
+    href: "mailto:bishupandit07@gmail.com",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
@@ -35,16 +35,16 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-borderline py-10 bg-background">
+    <footer className="border-t border-white/10 py-10 bg-black text-white relative">
       <div className="max-w-6xl mx-auto px-6 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm text-subtle">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-400">
           <p>
-            Designed &amp; developed by{" "}
+            Designed &amp; built by{" "}
             <a
               href="https://github.com/taniasha"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary font-medium hover:underline"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-semibold hover:underline"
             >
               Tania Sharma
             </a>{" "}
@@ -52,7 +52,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <nav className="flex items-center gap-5" aria-label="Social links">
+        <nav className="flex items-center gap-4" aria-label="Social links">
           {socials.map((s) => (
             <a
               key={s.id}
@@ -62,7 +62,7 @@ export default function Footer() {
               rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
               aria-label={s.label}
               title={s.label}
-              className="text-subtle hover:text-primary hover:-translate-y-0.5 transition-all p-1"
+              className="w-9 h-9 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-950/30 hover:shadow-[0_0_12px_rgba(168,85,247,0.3)] transition-all"
             >
               {s.icon}
             </a>
