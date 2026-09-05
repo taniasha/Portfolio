@@ -13,7 +13,7 @@ const skillCategories = [
       { name: "JavaScript", color: "text-yellow-400" },
       { name: "TypeScript", color: "text-blue-400" },
       { name: "Tailwind CSS", color: "text-teal-400" },
-      { name: "Framer Motion", color: "text-pink-400" },
+      { name: "Shadcn UI", color: "text-pink-400" },
       { name: "HTML5 & CSS3", color: "text-orange-400" },
       { name: "Bootstrap", color: "text-purple-400" },
     ],

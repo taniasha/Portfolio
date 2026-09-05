@@ -61,6 +61,12 @@ export default function Navbar() {
           >
             Skills
           </a>
+          <a
+            href="#contact"
+            className="px-3.5 py-1.5 text-sm font-medium text-gray-300 hover:text-white transition-colors rounded-full hover:bg-white/5"
+          >
+            Contact
+          </a>
         </nav>
 
         {/* Right CTAs */}
@@ -78,13 +84,13 @@ export default function Navbar() {
             </svg>
           </a>
 
-          {/* Let's Chat Button */}
+          {/* Contact Button */}
           <a
-            href="mailto:bishupandit07@gmail.com"
+            href="#contact"
             id="nav-contact"
             className="text-xs sm:text-sm font-semibold text-white px-4 py-2 rounded-full bg-gradient-to-r from-purple-600/30 to-pink-600/30 hover:from-purple-600/50 hover:to-pink-600/50 border border-purple-500/40 hover:border-purple-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:-translate-y-0.5"
           >
-            Let&apos;s Connect
+            Contact
           </a>
         </div>
 
@@ -152,11 +158,18 @@ export default function Navbar() {
             Skills
           </a>
           <a
-            href="mailto:bishupandit07@gmail.com"
+            href="#contact"
+            onClick={() => setMobileMenuOpen(false)}
+            className="px-4 py-2 text-sm text-purple-300 font-semibold hover:text-white rounded-lg hover:bg-white/5"
+          >
+            Contact
+          </a>
+          <a
+            href="#contact"
             onClick={() => setMobileMenuOpen(false)}
             className="mt-2 text-center text-xs font-semibold text-white py-2.5 rounded-full bg-gradient-to-r from-purple-600 to-pink-600"
           >
-            Let&apos;s Connect
+            Contact
           </a>
         </div>
       )}
