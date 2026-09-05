@@ -49,7 +49,7 @@ export default function Navbar() {
 
           {/* GitHub Icon Link */}
           <a
-            href="https://github.com/taniasha/Portfolio"
+            href="https://github.com/taniasha"
             target="_blank"
             rel="noopener noreferrer"
             title="View on GitHub"
